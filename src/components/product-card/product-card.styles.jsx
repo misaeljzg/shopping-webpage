@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Button from '../button/button.component';
 
 export const ProductCardContainer = styled.div`
-  width: 100%;
+  width: 22vw;
   display: flex;
   flex-direction: column;
   height: 350px;
@@ -20,6 +20,19 @@ export const ProductCardContainer = styled.div`
       
     }
   
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 40vw;
+    &:hover {  
+      opacity: unset;
+    }
+    button{
+      display: block;
+      opacity: 0.9;
+      min-width: unset;
+      padding: 0 10px;
+    }
   }
 `
 export const ImgProd = styled.img`
